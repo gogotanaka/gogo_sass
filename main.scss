@@ -1,0 +1,16 @@
+@for $i from 1 through 20 {
+  @each $direction in top right left bottom {
+    .m#{$direction}#{$i * 5} { margin-#{$direction}: $i * 5px !important;}
+    .p#{$direction}#{$i * 5} { padding-#{$direction}: $i * 5px !important; }
+  }
+  .mevery#{$i * 5} { margin: $i * 5px !important;}
+  .pevery#{$i * 5} { padding: $i * 5px !important; }
+}
+
+@each $direction in top right left bottom {
+  .m#{$direction}-auto { margin-#{$direction}: auto !important;}
+  .p#{$direction}-auto { padding-#{$direction}: auto !important;}
+}
+
+.mevery-auto { margin: auto !important;}
+.pevery-auto { padding: auto !important; }
